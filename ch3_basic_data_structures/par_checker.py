@@ -1,4 +1,3 @@
-
 from linear_adts import Stack
 
 
@@ -8,35 +7,36 @@ def par_checker(symbol_str):
       >>> par_checker('(())')
       True
       >>> par_checker('())')
-      False
+      (False, 'Cannot begin parentheses with ")"')
       >>> par_checker('((())')
-      False
+      (False, 'Parentheses are not closed')
       >>> par_checker('(3 + 5)')
       True
       >>> par_checker('(3 + 5) * (5 * (7 - 4))')
       True
       >>> par_checker('(3 + 5) * (5 * ((7 - 4))')
-      False
+      (False, 'Parentheses are not closed')
+      >>> par_checker(')(')
+      (False, 'Cannot begin parentheses with ")"')
     """
     s = Stack()
-    balanced = True
     index = 0
 
-    while index < len(symbol_str) and balanced:
+    while index < len(symbol_str):
         symbol = symbol_str[index]
         if symbol == '(':
             s.push(symbol)
-    
         else:
             if symbol != '(' and symbol != ')':
                 None
             elif s.is_empty():
-                balanced = False
+                return False, 'Cannot begin parentheses with ")"'
             else:
                 s.pop()
         index += 1
-
-    return balanced and s.is_empty()
+    if s.is_empty() == False:
+        return False, 'Parentheses are not closed'
+    return s.is_empty()
 
 
 if __name__ == '__main__':
