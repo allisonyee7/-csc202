@@ -1,3 +1,4 @@
+
 "Discussion Questions"
 
 
@@ -23,3 +24,10 @@
 
 6. You can only push a new element from the back of the queue, and you can only pop an element from the front of the queue. But push is called dequeue and pop is called enqueue. A queue is a First in First Out data structure example (FIFO)  
 
+
+7. 
+
+
+8. Removing a node from the end of the list required the preceding node to become the new end of the list.
+
+9. When there is only one node, we need to make sure the cases of beginning or end can handle removing the single node. If not, we need to make a new case.
