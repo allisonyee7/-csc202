@@ -2,7 +2,6 @@
 "Discussion Questions"
 
 
-
 1.0, 1, 1
 2.  
     a) +* (AB) +* (CD) + (EF)
