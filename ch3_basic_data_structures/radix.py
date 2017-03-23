@@ -29,7 +29,7 @@ def radix_sort(n):
             bin_q[r].enqueue(v)
         for v1 in visited:
             main_q.enqueue(v1)
-        for i in range(10)L
+        for i in range(10):
             while not bin_q[i].is_empty():
                 main_q.enqueue(bin_q[i].dequeue())
     result = []
