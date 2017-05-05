@@ -1,5 +1,5 @@
 from string import ascii_uppercase, digits
-
+def char_counts(s):
     """
     Return a list containing counts of the number of occurances of each
     ASCII character in s.
