@@ -27,7 +27,7 @@ list represents the partially sorted list after three complete passes of inserti
 3. [4, 5, 15, 18, 12, 19, 14, 10, 8, 20]
 4. [15, 5, 4, 18, 12, 19, 14, 8, 10, 20]
 
-Answer: 
+Answer: 3
 
 Given the following list of numbers: [5, 16, 20, 12, 3, 8, 9, 17, 19, 7] Which answer illustrates
 the contents of the list after all swapping is complete for a gap size of 3?
@@ -36,7 +36,7 @@ the contents of the list after all swapping is complete for a gap size of 3?
 3. [3, 5, 7, 8, 9, 12, 16, 17, 19, 20]
 4. [5, 16, 20, 3, 8, 12, 9, 17, 20, 7]
 
-
+Answer: 1
 
 
 Given the following list of numbers: [21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 40]
@@ -45,6 +45,8 @@ which answer illustrates the list to be sorted after 3 recursive calls to merges
 2. [21, 1]
 3. [21, 1, 26, 45]
 4. [21]
+
+Answer: 2
 
 
 
@@ -55,7 +57,7 @@ which answer illustrates the first two lists to be merged?
 3. [21] and [1]
 4. [9] and [16]
 
-
+Answer: 3
 
 
 Given the following list of numbers [14, 17, 13, 15, 19, 10, 3, 16, 9, 12] which answer shows the
@@ -64,6 +66,7 @@ contents of the list after the second partitioning according to the quicksort al
 2. [9, 3, 10, 13, 12, 14]
 3. [9, 3, 10, 13, 12, 14, 17, 16, 15, 19]
 4. [9, 3, 10, 13, 12, 14, 19, 16, 15, 17]
+Answer: 4
 
 
 
@@ -74,6 +77,8 @@ pivot value using the median of 3 method?
 3. 16
 4. 19
 
+Answer: 2
+
 
 
 
@@ -83,3 +88,4 @@ Which of the following sort algorithms are guaranteed to be ( log ) even in the 
 3. Merge Sort
 4. Insertion Sort
 
+Answer: 3 
